@@ -2,46 +2,173 @@
 
 **Redesigned and enhanced by Davin Verma.**
 
-An independently customized AZ-900 study interface based on the WISNIOM Azure Fundamentals quiz application. It adds browser-local progress saving, resume, practice batches, bookmarks, search and topic filters, flashcards/revision, timed exam practice, analytics, and theme controls.
+A simple practice website for preparing for the Microsoft Azure Fundamentals (AZ-900) exam. It includes practice questions, saved progress, bookmarks, revision flashcards, a timed exam mode, topic filters, analytics, and dark/light themes.
 
-## Credits and acknowledgements
+## Run this project on your computer
 
-- **Redesign and enhancements:** Davin Verma
+You can get the project in either of these two ways. Both methods work. You only need to choose one.
 
-This project is a redesigned and independently modified version of the Azure Fundamentals quiz application. The original application was created by **Eduard-Constantin Ibinceanu** and is available in the [original repository](https://github.com/eduardconstantin/azure-cloud-exams). The project was later forked and maintained in [WISNIOM/azure-fundamentals](https://github.com/WISNIOM/azure-fundamentals).
+### Before you start
 
-The AZ-900 practice questions and answer content are sourced from [Ditectrev's Microsoft Azure AZ-900 Practice Tests repository](https://github.com/Ditectrev/Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals-Practice-Tests-Exams-Questions-Answers). Thanks to **Ditectrev and the repository contributors** for making this question resource available. See the [contributors list](https://github.com/Ditectrev/Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals-Practice-Tests-Exams-Questions-Answers/graphs/contributors).
+Install these programs:
 
-**Redesigned, customized, and maintained by Davin Verma:** the interface was redesigned and the project was enhanced with practice, progress saving/resume, bookmarks, search and topic filters, flashcards/revision, timed exam practice, analytics, and theme controls. Davin Verma’s work covers the redesign and added functionality only. These additions do not replace or claim ownership of the original application or question content.
+1. **Node.js 20 or newer:** Download it from [https://nodejs.org](https://nodejs.org). Choose the LTS version. Node.js also installs npm.
+2. **Visual Studio Code:** Download it from [https://code.visualstudio.com](https://code.visualstudio.com).
+3. **Git (only for Method 1):** Download it from [https://git-scm.com](https://git-scm.com). If you use Method 2, Git is not required.
 
-**Microsoft, Azure, and AZ-900** are trademarks of Microsoft. This is an independent community study project and is not affiliated with, endorsed by, or sponsored by Microsoft.
+After installing, close and reopen Visual Studio Code so it can detect the programs.
 
-The original application's [MIT licence](LICENSE) is retained in this repository. Please refer to the source repositories for their respective content, contributor, and licensing information.
+## Method 1: Clone the Repository Using Command Prompt (CMD)
 
-## Run locally
+Follow these steps to download and run the AZ-900 Practice Hub using Command Prompt.
 
-Requires Node.js 20 or newer.
+### Step 1: Open Command Prompt
+
+- Press `Windows + R`.
+- Type `cmd` and press Enter.
+
+### Step 2: Clone the GitHub Repository
+
+Run the following command:
+
+```cmd
+git clone https://github.com/davinverma/AZ900-Practice-Hub.git
+```
+
+This downloads the complete project to your Desktop.
+
+### Step 3: Enter the Project Folder
+
+```cmd
+cd AZ900-Practice-Hub
+```
+
+### Step 4: Run the Setup Command
+
+```cmd
+npm run setup
+```
+
+This automatically installs the required packages, imports the AZ-900 question bank, and starts the development server.
+
+### Step 5: Open the Website
+
+Once the server starts, open your browser and visit:
+
+**http://localhost:3000**
+
+You can now use the AZ-900 Practice Hub!
+
+---
+
+### If the Setup Command Does Not Work
+
+Make sure you are inside the `AZ900-Practice-Hub` folder in CMD, then run these commands one by one:
+
+**1. Install dependencies:**
+
+```cmd
+npm install
+```
+
+**2. Import or refresh the question bank:**
+
+```cmd
+npm run setup
+```
+
+**3. Start the development server:**
+
+```cmd
+npm run dev
+```
+
+**4. Open the website:**
+
+Visit **http://localhost:3000** in your browser.
+
+**Important:** Keep the Command Prompt window open while using the website. Closing it will stop the development server.
+
+
+
+
+## Method 2: Download ZIP and Run Using VS Code
+
+Follow these steps if you do not want to use Git or clone the repository.
+
+### Step 1: Download the Project
+
+1. Open the GitHub repository:  
+   https://github.com/davinverma/AZ900-Practice-Hub
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
+4. Once downloaded, extract the ZIP file to your preferred location.
+
+### Step 2: Open the Project in VS Code
+
+1. Open Visual Studio Code.
+2. Select **File → Open Folder**.
+3. Choose the extracted `AZ900-Practice-Hub` folder.
+4. Open the terminal using **Terminal → New Terminal**.
+
+### Step 3: Run the Setup Command
+
+**Option A: One-line command**
+
+Copy and run this command in the VS Code terminal:
 
 ```bash
 npm run setup
 ```
 
-The setup script installs dependencies, imports the question bank, and starts the local Next.js development server. Open http://localhost:3000. On later runs, use `npm run dev`.
+This automatically installs the required packages, imports the AZ-900 question bank, and starts the development server.
 
-## Build for deployment
+**Option B: Run commands line by line**
+
+If you prefer to execute each command separately, run:
+
+**1. Install the required dependencies:**
 
 ```bash
 npm install
-npm run build
-npm run start
 ```
 
-Import the question bank before building if the local `src/qdb.json` does not already contain it. For a public deployment, first confirm permission/license terms for redistributing the Ditectrev question content.
+**2. Import or refresh the question bank:**
 
-## Progress storage
+```bash
+npm run setup
+```
 
-Progress is stored in `localStorage` in the current browser profile and device. It survives refreshes and browser restarts but does not sync between devices. Clearing browser site data removes saved progress.
+**3. Start the development server:**
 
-## Important exam note
+```bash
+npm run dev
+```
 
-This is a community practice resource, not an official Microsoft exam question bank. Questions and exam objectives can change. Check the current [Microsoft AZ-900 certification page](https://learn.microsoft.com/credentials/certifications/azure-fundamentals/) and Microsoft Learn materials.
+### Step 4: Open the Website
+
+Once the server starts, open your browser and visit:
+
+**http://localhost:3000**
+
+You can now use the AZ-900 Practice Hub!
+
+### Important Notes
+
+- Make sure Node.js is installed on your computer.
+- Open the extracted project folder containing `package.json` in VS Code.
+- Keep the VS Code terminal open while using the website. Closing it will stop the development server.
+
+
+## Progress and privacy
+
+Your practice progress is saved in your browser's local storage on that device. It remains after refreshing the page, but it does not automatically sync to another browser or device. Clearing the browser's site data can erase saved progress.
+
+## Credits and acknowledgements
+
+- **Redesign and enhancements:** Davin Verma.
+- **Original application:** Created by Eduard-Constantin Ibinceanu in the [original repository](https://github.com/eduardconstantin/azure-cloud-exams), and later forked and maintained in [WISNIOM/azure-fundamentals](https://github.com/WISNIOM/azure-fundamentals).
+- **Question content:** The AZ-900 practice questions are sourced from [Ditectrev's Microsoft Azure AZ-900 Practice Tests repository](https://github.com/Ditectrev/Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals-Practice-Tests-Exams-Questions-Answers). Thanks to Ditectrev and its contributors.
+
+
+**Microsoft, Azure, and AZ-900** are trademarks of Microsoft. This is an independent community study project and is not affiliated with, endorsed by, or sponsored by Microsoft. This is a practice resource, not an official Microsoft exam question bank. Exam objectives and questions can change, so also study the current [Microsoft Azure Fundamentals certification page](https://learn.microsoft.com/credentials/certifications/azure-fundamentals/) and Microsoft Learn materials.
