@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body, #__next { min-height: 100%; }
+body { margin: 0; background: #0f172a; }
+button, select, input { font: inherit; }
+:root { color-scheme: dark; }
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='light'] body { background:#f1f5f9; color:#0f172a; }
+:root[data-theme='light'] .bg-slate-900 { background-color:#f1f5f9!important; }
+:root[data-theme='light'] .bg-slate-800 { background-color:#fff!important; }
+:root[data-theme='light'] .bg-slate-700\/40, :root[data-theme='light'] .bg-slate-700 { background-color:#e2e8f0!important; }
+:root[data-theme='light'] .text-white, :root[data-theme='light'] .text-slate-100 { color:#0f172a!important; }
+:root[data-theme='light'] .text-slate-300, :root[data-theme='light'] .text-slate-400 { color:#475569!important; }
+:root[data-theme='light'] .border-slate-700, :root[data-theme='light'] .border-slate-600 { border-color:#cbd5e1!important; }
+:root[data-theme='light'] .app-nav { color:#0f172a; border-color:#cbd5e1; }
+:root[data-theme='light'] .app-nav a { color:#334155; }
+:root[data-theme='light'] input, :root[data-theme='light'] select { background:#fff!important; color:#0f172a!important; border-color:#cbd5e1!important; }
+.theme-toggle { border:1px solid #64748b; border-radius:9px; padding:7px 10px; }
