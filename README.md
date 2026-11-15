@@ -4,6 +4,11 @@
 
 A simple practice website for preparing for the Microsoft Azure Fundamentals (AZ-900) exam. It includes practice questions, saved progress, bookmarks, revision flashcards, a timed exam mode, topic filters, analytics, and dark/light themes.
 
+<img width="1522" height="727" alt="image" src="https://github.com/user-attachments/assets/80e6b3b7-71d1-45fa-954b-29a835ad6649" />
+<img width="1523" height="731" alt="image" src="https://github.com/user-attachments/assets/da92a37e-9f59-4a82-810d-9932743d046c" />
+
+
+
 ## Run this project on your computer
 
 You can get the project in either of these two ways. Both methods work. You only need to choose one.
