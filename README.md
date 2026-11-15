@@ -182,4 +182,4 @@ Your practice progress is saved in your browser's local storage on that device. 
 - **Question content:** The AZ-900 practice questions are sourced from [Ditectrev's Microsoft Azure AZ-900 Practice Tests repository](https://github.com/Ditectrev/Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals-Practice-Tests-Exams-Questions-Answers). Thanks to Ditectrev and its contributors.
 
 
-**Microsoft, Azure, and AZ-900** are trademarks of Microsoft. This is an independent community study project and is not affiliated with, endorsed by, or sponsored by Microsoft. This is a practice resource, not an official Microsoft exam question bank. Exam objectives and questions can change, so also study the current [Microsoft Azure Fundamentals certification page](https://learn.microsoft.com/credentials/certifications/azure-fundamentals/) and Microsoft Learn materials.
+**Microsoft, Azure, and AZ-900** are trademarks of Microsoft. This is an independent community study project and is not affiliated with, endorsed by, or sponsored by Microsoft.
