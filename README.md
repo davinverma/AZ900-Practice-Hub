@@ -89,7 +89,7 @@ Visit **http://localhost:3000** in your browser.
 
 **Important:** Keep the Command Prompt window open while using the website. Closing it will stop the development server.
 
-
+(For Next time whenever you want to open this website just open cmd and then go to this folder by cd and type npm run dev)
 
 
 ## Method 2: Download ZIP and Run Using VS Code
