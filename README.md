@@ -158,6 +158,9 @@ Once the server starts, open your browser and visit:
 
 You can now use the AZ-900 Practice Hub!
 
+<img width="1511" height="729" alt="image" src="https://github.com/user-attachments/assets/7aec3af8-66c7-4d04-b560-cddd1b5f841f" />
+
+
 ### Important Notes
 
 - Make sure Node.js is installed on your computer.
@@ -168,6 +171,9 @@ You can now use the AZ-900 Practice Hub!
 ## Progress and privacy
 
 Your practice progress is saved in your browser's local storage on that device. It remains after refreshing the page, but it does not automatically sync to another browser or device. Clearing the browser's site data can erase saved progress.
+
+<img width="1203" height="359" alt="image" src="https://github.com/user-attachments/assets/38d9aac5-e98a-44b1-ac73-511400d24b6e" />
+
 
 ## Credits and acknowledgements
 
